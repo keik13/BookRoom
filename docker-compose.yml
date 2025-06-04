@@ -1,0 +1,11 @@
+version: '1'
+
+services:
+  postgres:
+    ports:
+      - "5432:5432"
+    image: "postgres:17.5-bookworm"
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - ./scripts/postgres-init.sql:/docker-entrypoint-initdb.d/init.sql
