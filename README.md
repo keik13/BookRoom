@@ -1,4 +1,4 @@
-# bigdata-api-inform-exchange
+# BookRoom
 
 ## Инструкция локального запуска
 
